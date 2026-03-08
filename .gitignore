@@ -1,0 +1,18 @@
+## Visual Studio Ignore
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+
+## Sujeira de compilação
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.suo
+
+## Arquivos de configuração local (Importante para segurança)
+appsettings.Development.json

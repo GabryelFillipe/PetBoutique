@@ -64,19 +64,19 @@ public class ProdutosController : ControllerBase
     }
 
     [HttpGet]
-    [Route("GetItensPorCateforia/{categoriaId}")]
-    public async Task<ActionResult<IEnumerable<ProdutoDto>>>GetItensPorCategoria(int id)
+    [Route("GetItensPorCategoria/{categoriaId:int}")]
+    public async Task<ActionResult<IEnumerable<ProdutoDto>>> GetItensPorCategoria(int categoriaId)
     {
         try
         {
-            var produtos = await _produtoRepository.GetItemPorCategoria(id);
+            var produtos = await _produtoRepository.GetItemPorCategoria(categoriaId);
             var produtosDto = produtos.ConverterProdutosParaDto();
             return Ok(produtosDto);
 
         }
         catch (Exception)
         {
-            return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao acessar a base de Dados");
+            return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao aceder à base de dados");
         }
     }
 }

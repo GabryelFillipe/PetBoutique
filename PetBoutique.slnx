@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore.txt" />
+  </Folder>
   <Project Path="PetBoutique.Api/PetBoutique.Api.csproj" />
   <Project Path="PetBoutique.Models/PetBoutique.Models.csproj" />
   <Project Path="PetBoutique.Web/PetBoutique.Web.csproj" />
